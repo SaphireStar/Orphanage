@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/my_donation_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/donation_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:isScrollContainer="false"
+        android:outlineAmbientShadowColor="#CD1010"
+        android:outlineSpotShadowColor="#E40D0D"
+        app:tint="#ED1F1F"
+        app:srcCompat="@drawable/ic_baseline_airport_shuttle_24" />
+</LinearLayout>

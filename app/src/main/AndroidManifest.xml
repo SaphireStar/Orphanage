@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="au.edu.sydney.comp5216.orphan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user.topTab.UserTab"
+                 android:parentActivityName=".user.OrphanagesListView"/>
+        <activity
+            android:name=".user.financial.PaymentDonate"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".orph.topTab.OrphanTab"
+                android:parentActivityName=".orph.OrphProfile">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".orph.OrphProfile" />
+        </activity>
+
+        <activity
+            android:name=".orph.financial.NewDonation"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- <activity android:name=".login.UserIdentityActivity"/> -->
+        <activity android:name=".login.UserIdentityActivity" />
+        <activity android:name=".login.OrphanageRegisterActivity" />
+        <activity android:name=".user.profile.Profile" />
+        <activity android:name=".user.UserOrphProfile" />
+        <activity android:name=".user.Forum.Forum" />
+        <activity android:name=".orph.OrphProfile" />
+        <activity android:name=".user.OrphanagesListView" />
+        <activity android:name=".user.wishlist.DeliveryActivity" />
+        <activity android:name=".orph.wishlist.AddWishListItemActivity" />
+        <activity android:name=".user.Forum.NewForum" />
+        <activity android:name=".user.profile.MyDonations" />
+        <activity android:name=".user.profile.UserGoal" />
+        <activity android:name=".user.financial.PaymentDetails"/>
+    </application>
+    
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

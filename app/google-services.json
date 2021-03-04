@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "397261211970",
+    "firebase_url": "https://orphanage-a07f2.firebaseio.com",
+    "project_id": "orphanage-a07f2",
+    "storage_bucket": "orphanage-a07f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397261211970:android:548ea7205c24958b7560db",
+        "android_client_info": {
+          "package_name": "au.edu.sydney.comp5216.orphan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397261211970-cke17urckinuk4a4u6mtfidl7b6gnke6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd6Ih8DXt52QVQCSkTjjg2kgTR0zXMqAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397261211970-cke17urckinuk4a4u6mtfidl7b6gnke6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

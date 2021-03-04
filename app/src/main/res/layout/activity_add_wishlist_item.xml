@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:padding="5dip" >
+    <TextView
+        android:id="@+id/add_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_item_title"
+        android:padding="15dip"
+        android:textSize="19sp" />
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/add_item_title"
+        android:text="Title"
+        android:padding="15dip"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/u_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:ems="10"
+        android:maxLines="1"
+        android:background="@drawable/textview_border"
+        android:padding="5dip"
+        android:layout_margin="10dip"
+        android:hint="@string/item_title"
+        android:autofillHints="">
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/u_item_title"
+        android:text="Type"
+        android:padding="15dip"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/u_item_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_type"
+        android:ems="10"
+        android:maxLines="1"
+        android:background="@drawable/textview_border"
+        android:layout_margin="10dip"
+        android:paddingBottom="10dip"
+        android:hint="@string/item_type"
+        android:autofillHints="">
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/u_item_type"
+        android:text="Description"
+        android:padding="15dip"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/u_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_description"
+        android:ems="10"
+        android:minLines="1"
+        android:maxLines="5"
+        android:background="@drawable/textview_border"
+        android:layout_margin="10dip"
+        android:paddingBottom="10dip"
+        android:hint="@string/content_description"
+        android:autofillHints="">
+
+        <requestFocus />
+    </EditText>
+    <Button
+        android:id="@+id/submit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@drawable/btnstyle"
+        android:text="@string/send" />
+</RelativeLayout>

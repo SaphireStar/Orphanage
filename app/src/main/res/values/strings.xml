@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">orphan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="financial_tab_user">Financial</string>
+    <string name="wishList_tab_user">Wish List</string>
+    <string name="rank_tab_user">Donor List</string>
+    <string name="financial_usr_description">
+        Almost 1,600 children live in two dirty, damp and cold orphanages in the Afghan capital.
+        There is a shortage of food and medical care for the children suffering from open sores on their faces,
+        lice in their hair and constant coughs.
+        Children who don\'t live at the orphanages usually end up begging for change on the streets of Kabul.
+    </string>
+    <string name="financial_orphan_description">
+        Almost 1,600 children live in two dirty, damp and cold orphanages in the Afghan capital.
+        There is a shortage of food and medical care for the children suffering from open sores on their faces,
+        lice in their hair and constant coughs.
+        Children who don\'t live at the orphanages usually end up begging for change on the streets of Kabul.
+    </string>
+    <string name="financial_tab_orphan">Financial</string>
+    <string name="wishList_tab_orphan">Wish List</string>
+    <string name="rank_tab_orphan">Donor List</string>
+    <string name="title_activity_new_donation">NewDonation</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- User Identity Activity -->
+    <string name="ui_register"><u>You are an orphanage owner?</u></string>
+    <string name="fab_content_desc" />
+    <string name="hello_world">Hello Round World!</string>
+    <!-- Wish List Activity-->
+    <string name="wishlist">WishList</string>
+    <string name="delivery">delivery</string>
+    <string name="deliver_your_gift">Deliver your gift</string>
+    <string name="send">Send</string>
+    <string name="add_delivery_information">Add delivery information</string>
+    <string name="content_description">Content description</string>
+    <string name="add_tracking_id">Add tracking ID</string>
+    <string name="close">Close</string>
+    <string name="donors">Donors</string>
+    <string name="current_amount">Current</string>
+    <string name="goal">Goal</string>
+    <string name="add">Add</string>
+    <string name="add_item_title">Propose New Donation</string>
+    <string name="item_type">Item type</string>
+    <string name="item_title">Item title</string>
+    <string name="update">Update</string>
+    <string name="rank_name">name</string>
+    <string name="rank_donate_date">donate date</string>
+    <string name="rank_money">money</string>
+    <string name="empty_donate">No one has donated yet</string>
+</resources>

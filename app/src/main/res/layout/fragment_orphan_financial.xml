@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.financial.UserFinancial">
+
+    <ScrollView
+        android:id="@+id/financial_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/empty_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/donationFirst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/custom_border">
+
+                <TextView
+                    android:id="@+id/financial_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/financial_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="2sp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#787575"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/donors_number"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/current_number"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/goal_number"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/donors_title"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="@string/donors"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/current_title"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/current_amount"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/goal_title"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="@string/goal"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp" />
+
+                <Button
+                    android:id="@+id/financial_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btnstyle"
+                    android:text="Close"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/donationSecond"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_border">
+
+                <TextView
+                    android:id="@+id/usage_financial_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usage"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/financial_usage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="2sp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#787575"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <ImageButton
+                        android:id="@+id/editBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/ic_baseline_edit_24" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/addBtn"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_baseline_add_circle_24" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
